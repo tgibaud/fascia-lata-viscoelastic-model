@@ -38,8 +38,8 @@ Parameter optimization is performed via `fminsearch` with bounded variables, min
 2. Set the ramp speed and initial recruitment parameters at the top of the script:
 ```matlab
 P.v  = 8;       % ramp speed (mm/s)
-P.L0 = 42;      % recruitment parameter (mm)
-P.sigma = 0.38; % recruitment parameter
+P.L0 = 55;      % recruitment parameter (mm) for the right leg (left, 42)
+P.sigma = 0.40; % recruitment parameter for the right leg (left, 0.38)
 ```
 3. Run the script — a file dialog will prompt you to select a `.txt` data file
 4. The script will fit the model and display:
